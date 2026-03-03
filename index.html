@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V Viva Skin & Hair Clinic | Dr. Neelima Potluri | Jubilee Hills, Hyderabad</title>
+<meta name="description" content="Advanced dermatology care by Dr. Neelima Potluri at V Viva Skin & Hair Clinic, Jubilee Hills, Hyderabad. Specializing in PRP, hair fall treatment, acne scars, chemical peels.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ivory: #FAF7F2;
+    --warm-white: #F5F0E8;
+    --sage: #8B9E8A;
+    --sage-light: #C4D0C3;
+    --sage-dark: #5C7A5B;
+    --charcoal: #2C2C2C;
+    --charcoal-light: #4A4A4A;
+    --gold: #B8965A;
+    --gold-light: #D4B07A;
+    --blush: #E8DDD3;
+    --text-muted: #7A7A7A;
+    --border: rgba(139,158,138,0.2);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--ivory);
+    color: var(--charcoal);
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5vw;
+    height: 72px;
+    background: rgba(250,247,242,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    transition: box-shadow 0.3s;
+  }
+  nav.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.07); }
+
+  .nav-logo {
+    display: flex; flex-direction: column;
+  }
+  .nav-logo-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--charcoal);
+    line-height: 1;
+  }
+  .nav-logo-sub {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--sage-dark);
+    margin-top: 3px;
+  }
+
+  .nav-links {
+    display: flex; gap: 2.5rem; list-style: none;
+  }
+  .nav-links a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--charcoal-light);
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--sage-dark); }
+
+  .nav-cta {
+    background: var(--sage-dark);
+    color: white !important;
+    padding: 10px 22px;
+    border-radius: 2px;
+    letter-spacing: 0.1em !important;
+    font-size: 0.75rem !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--charcoal) !important; color: white !important; }
+
+  .hamburger {
+    display: none;
+    flex-direction: column; gap: 5px; cursor: pointer; padding: 4px;
+  }
+  .hamburger span {
+    width: 24px; height: 1.5px; background: var(--charcoal); transition: all 0.3s;
+    display: block;
+  }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 72px;
+  }
+
+  .hero-left {
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 6vw 4vw 6vw 7vw;
+    position: relative;
+  }
+
+  .hero-eyebrow {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 2rem;
+  }
+  .hero-eyebrow-line {
+    width: 40px; height: 1px; background: var(--gold);
+  }
+  .hero-eyebrow-text {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .hero-h1 {
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    font-weight: 300;
+    color: var(--charcoal);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+  }
+  .hero-h1 em {
+    font-style: italic;
+    color: var(--sage-dark);
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    color: var(--text-muted);
+    max-width: 440px;
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  .hero-rating {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 2.5rem;
+    padding: 16px 20px;
+    background: white;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    width: fit-content;
+    border-radius: 2px;
+  }
+  .stars { color: var(--gold); font-size: 1rem; letter-spacing: 2px; }
+  .rating-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--charcoal);
+    line-height: 1;
+  }
+  .rating-meta {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+  .rating-divider { width: 1px; height: 36px; background: var(--border); }
+
+  .hero-actions {
+    display: flex; gap: 16px; align-items: center; flex-wrap: wrap;
+  }
+  .btn-primary {
+    background: var(--sage-dark);
+    color: white;
+    padding: 16px 36px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: all 0.25s;
+    display: inline-flex; align-items: center; gap: 10px;
+    font-weight: 500;
+  }
+  .btn-primary:hover { background: var(--charcoal); transform: translateY(-1px); }
+
+  .btn-secondary {
+    color: var(--charcoal);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: inline-flex; align-items: center; gap: 8px;
+    border-bottom: 1px solid var(--charcoal);
+    padding-bottom: 2px;
+    transition: color 0.2s;
+    font-weight: 500;
+  }
+  .btn-secondary:hover { color: var(--sage-dark); border-color: var(--sage-dark); }
+
+  .hero-right {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(145deg, var(--sage-light) 0%, var(--blush) 60%, var(--warm-white) 100%);
+  }
+
+  .hero-img-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to right, var(--ivory) 0%, transparent 15%);
+    z-index: 2;
+  }
+
+  .hero-visual {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .hero-circle-bg {
+    width: 70%; aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 40%, rgba(139,158,138,0.3), rgba(184,150,90,0.1));
+    position: absolute;
+  }
+
+  .hero-badge-group {
+    position: absolute; z-index: 3;
+    display: flex; flex-direction: column; gap: 12px;
+    right: 7%; top: 50%; transform: translateY(-50%);
+  }
+
+  .hero-badge {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 14px 18px;
+    border-radius: 4px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    width: 180px;
+    opacity: 0;
+    animation: fadeSlideIn 0.6s ease forwards;
+  }
+  .hero-badge:nth-child(1) { animation-delay: 0.3s; }
+  .hero-badge:nth-child(2) { animation-delay: 0.5s; }
+  .hero-badge:nth-child(3) { animation-delay: 0.7s; }
+
+  .badge-icon { font-size: 1.5rem; margin-bottom: 6px; display: block; }
+  .badge-title { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; color: var(--charcoal); display: block; }
+  .badge-desc { font-size: 0.7rem; color: var(--text-muted); margin-top: 2px; display: block; }
+
+  .hero-texture {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(139,158,138,0.08) 1px, transparent 1px);
+    background-size: 28px 28px;
+    z-index: 1;
+  }
+
+  @keyframes fadeSlideIn {
+    from { opacity: 0; transform: translateX(16px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  /* ── SECTION BASICS ── */
+  section { padding: 100px 7vw; }
+
+  .section-tag {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-bottom: 1.2rem;
+  }
+  .section-tag-line { width: 30px; height: 1px; background: var(--gold); }
+  .section-tag-text {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .section-h2 {
+    font-size: clamp(2.2rem, 3.5vw, 3.8rem);
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+    line-height: 1.15;
+  }
+  .section-h2 em { font-style: italic; color: var(--sage-dark); }
+
+  .section-intro {
+    font-size: 1rem;
+    color: var(--text-muted);
+    max-width: 560px;
+    font-weight: 300;
+    line-height: 1.85;
+  }
+
+  /* ── TRUST BAR ── */
+  #trust {
+    background: var(--charcoal);
+    padding: 40px 7vw;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 24px;
+  }
+  .trust-item {
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center; flex: 1; min-width: 140px;
+  }
+  .trust-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+  .trust-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-top: 6px;
+  }
+  .trust-divider {
+    width: 1px; height: 60px;
+    background: rgba(255,255,255,0.1);
+  }
+
+  /* ── SERVICES ── */
+  #services { background: var(--warm-white); }
+
+  .services-header {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    margin-bottom: 60px; flex-wrap: wrap; gap: 24px;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2px;
+  }
+
+  .service-category {
+    background: white;
+    padding: 48px 40px;
+  }
+
+  .service-category-header {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .service-category-icon {
+    width: 48px; height: 48px;
+    background: var(--ivory);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+  .service-category-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--charcoal);
+  }
+  .service-category-sub {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .service-list { list-style: none; }
+  .service-item {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .service-item:last-child { border-bottom: none; }
+  .service-item-name {
+    font-size: 0.95rem;
+    color: var(--charcoal);
+    font-weight: 400;
+  }
+  .service-item-tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sage-dark);
+    background: rgba(92,122,91,0.08);
+    padding: 4px 10px;
+    border-radius: 20px;
+  }
+
+  .service-feature {
+    margin-top: 28px;
+    padding: 20px;
+    background: var(--ivory);
+    border-left: 2px solid var(--sage);
+    border-radius: 0 4px 4px 0;
+  }
+  .service-feature p {
+    font-size: 0.85rem;
+    color: var(--charcoal-light);
+    line-height: 1.7;
+  }
+
+  /* ── ABOUT CLINIC ── */
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .about-visual {
+    position: relative;
+  }
+  .about-main-card {
+    background: var(--charcoal);
+    padding: 48px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-card-pattern {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(139,158,138,0.12) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  .about-card-content { position: relative; z-index: 1; }
+  .about-card-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 20px;
+    display: block;
+  }
+  .about-card-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: white;
+    line-height: 1.4;
+    font-style: italic;
+  }
+  .about-card-attr {
+    margin-top: 24px;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 0.05em;
+  }
+
+  .about-stat-row {
+    display: flex; gap: 16px; margin-top: 16px;
+  }
+  .about-stat-box {
+    flex: 1;
+    background: white;
+    border: 1px solid var(--border);
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  .about-stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--sage-dark);
+    line-height: 1;
+  }
+  .about-stat-lbl {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+    letter-spacing: 0.05em;
+  }
+
+  .about-content {}
+  .about-points { margin-top: 32px; display: flex; flex-direction: column; gap: 20px; }
+  .about-point {
+    display: flex; gap: 16px; align-items: flex-start;
+  }
+  .about-point-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--sage-dark); margin-top: 7px; flex-shrink: 0;
+  }
+  .about-point-text { font-size: 0.92rem; color: var(--charcoal-light); line-height: 1.75; }
+
+  /* ── DOCTOR ── */
+  #doctor { background: var(--warm-white); }
+
+  .doctor-grid {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 80px;
+    align-items: start;
+    margin-top: 60px;
+  }
+
+  .doctor-card {
+    background: white;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    border-radius: 4px;
+    position: sticky; top: 100px;
+  }
+
+  .doctor-card-portrait {
+    height: 300px;
+    background: linear-gradient(135deg, var(--sage-light), var(--blush));
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .portrait-initials {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    color: rgba(92,122,91,0.4);
+    font-weight: 300;
+    font-style: italic;
+  }
+  .portrait-label {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: rgba(44,44,44,0.85);
+    color: white;
+    padding: 16px 20px;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .doctor-card-body { padding: 28px; }
+  .doctor-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--charcoal);
+    margin-bottom: 4px;
+  }
+  .doctor-title {
+    font-size: 0.78rem;
+    color: var(--sage-dark);
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+  }
+  .doctor-credentials {
+    list-style: none;
+    display: flex; flex-direction: column; gap: 8px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  .doctor-credential {
+    font-size: 0.82rem;
+    color: var(--charcoal-light);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .doctor-credential::before {
+    content: '';
+    width: 5px; height: 5px; background: var(--gold);
+    border-radius: 50%; flex-shrink: 0;
+  }
+
+  .doctor-info {}
+  .doctor-philosophy {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.65rem;
+    font-weight: 300;
+    color: var(--charcoal);
+    line-height: 1.5;
+    font-style: italic;
+    margin-bottom: 28px;
+    padding-left: 20px;
+    border-left: 2px solid var(--gold);
+  }
+  .doctor-bio-section { margin-bottom: 28px; }
+  .doctor-bio-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+    display: block;
+  }
+  .doctor-bio-text {
+    font-size: 0.95rem;
+    color: var(--charcoal-light);
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  /* ── INFRASTRUCTURE ── */
+  #infra {}
+  .infra-header { margin-bottom: 60px; }
+  .infra-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-bottom: 2px;
+  }
+  .infra-card {
+    background: var(--warm-white);
+    padding: 40px 36px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s;
+  }
+  .infra-card:hover { background: white; }
+  .infra-card-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--sage-light);
+    position: absolute; top: 20px; right: 24px;
+    line-height: 1;
+  }
+  .infra-card-icon { font-size: 1.8rem; margin-bottom: 16px; display: block; }
+  .infra-card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--charcoal);
+  }
+  .infra-card-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+  }
+
+  .infra-bottom {
+    background: var(--charcoal);
+    padding: 40px 60px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 20px;
+  }
+  .infra-bottom-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+    max-width: 500px;
+  }
+
+  /* ── REVIEWS ── */
+  #reviews { background: var(--warm-white); }
+  .reviews-header { margin-bottom: 60px; }
+  .reviews-summary {
+    display: flex; align-items: center; gap: 40px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+  }
+  .reviews-score {
+    text-align: center;
+    padding: 32px 40px;
+    background: var(--charcoal);
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+  .reviews-score-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    color: var(--gold-light);
+    line-height: 1;
+    display: block;
+  }
+  .reviews-score-stars { color: var(--gold-light); font-size: 1.1rem; margin: 8px 0; display: block; letter-spacing: 3px; }
+  .reviews-score-label { font-size: 0.7rem; color: rgba(255,255,255,0.4); letter-spacing: 0.1em; text-transform: uppercase; }
+
+  .reviews-breakdown { flex: 1; }
+  .breakdown-item {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 8px;
+  }
+  .breakdown-label { font-size: 0.8rem; color: var(--text-muted); width: 40px; }
+  .breakdown-bar {
+    flex: 1; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden;
+  }
+  .breakdown-fill { height: 100%; background: var(--gold); border-radius: 2px; }
+  .breakdown-count { font-size: 0.75rem; color: var(--text-muted); width: 20px; text-align: right; }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .review-card {
+    background: white;
+    padding: 32px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    transition: box-shadow 0.2s;
+  }
+  .review-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.07); }
+  .review-stars { color: var(--gold); font-size: 0.9rem; letter-spacing: 2px; margin-bottom: 14px; }
+  .review-text {
+    font-size: 0.9rem;
+    color: var(--charcoal-light);
+    line-height: 1.8;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+  }
+  .review-author {
+    display: flex; align-items: center; gap: 12px;
+  }
+  .review-avatar {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--sage-light);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.8rem;
+    color: var(--sage-dark);
+    font-weight: 500;
+  }
+  .review-name { font-size: 0.82rem; font-weight: 500; color: var(--charcoal); }
+  .review-date { font-size: 0.72rem; color: var(--text-muted); }
+
+  /* ── APPOINTMENT ── */
+  #appointment {
+    background: var(--charcoal);
+    text-align: center;
+    padding: 100px 7vw;
+    position: relative; overflow: hidden;
+  }
+  .appt-bg-pattern {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(184,150,90,0.06) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  .appt-content { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
+  .appt-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-bottom: 2rem;
+  }
+  .appt-eyebrow-line { width: 24px; height: 1px; background: var(--gold); }
+  .appt-eyebrow-text {
+    font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold);
+  }
+  .appt-h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 300;
+    color: white;
+    margin-bottom: 1.2rem;
+    line-height: 1.2;
+  }
+  .appt-h2 em { font-style: italic; color: var(--gold-light); }
+  .appt-desc {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 3rem;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+  .appt-actions {
+    display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+  }
+  .btn-gold {
+    background: var(--gold);
+    color: white;
+    padding: 16px 40px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: all 0.25s;
+    font-weight: 500;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-gold:hover { background: var(--gold-light); transform: translateY(-1px); }
+  .btn-outline-white {
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    padding: 16px 36px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: all 0.25s;
+    font-weight: 500;
+  }
+  .btn-outline-white:hover { border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.05); }
+
+  /* ── CONTACT ── */
+  #contact { }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 60px;
+    align-items: start;
+  }
+
+  .contact-details { display: flex; flex-direction: column; gap: 32px; }
+  .contact-item {
+    display: flex; gap: 20px; align-items: flex-start;
+  }
+  .contact-icon {
+    width: 44px; height: 44px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .contact-item-content {}
+  .contact-item-label {
+    font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 5px; display: block;
+  }
+  .contact-item-value {
+    font-size: 0.95rem; color: var(--charcoal); line-height: 1.6;
+  }
+  .contact-item-value a { color: var(--charcoal); text-decoration: none; }
+  .contact-item-value a:hover { color: var(--sage-dark); }
+
+  .contact-hours {
+    background: var(--warm-white);
+    padding: 32px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+  .hours-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--charcoal);
+    margin-bottom: 16px;
+  }
+  .hours-note {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    line-height: 1.6;
+  }
+
+  .map-placeholder {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    height: 380px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    padding: 32px;
+    position: relative;
+  }
+  .map-address-overlay {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 20px 24px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 280px;
+    z-index: 2;
+  }
+  .map-address-clinic {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 6px;
+  }
+  .map-address-text {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .map-grid-bg {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.5;
+  }
+  .map-pin { font-size: 2.5rem; margin-bottom: 12px; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #1E1E1E;
+    padding: 60px 7vw 30px;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    margin-bottom: 32px;
+  }
+  .footer-brand-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 6px;
+  }
+  .footer-brand-tagline {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .footer-brand-desc {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.35);
+    line-height: 1.8;
+    max-width: 320px;
+  }
+  .footer-col-title {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+    margin-bottom: 20px;
+  }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-links a {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.45);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: rgba(255,255,255,0.8); }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 12px;
+  }
+  .footer-copy {
+    font-size: 0.75rem; color: rgba(255,255,255,0.25);
+  }
+  .footer-disclaimer {
+    font-size: 0.72rem; color: rgba(255,255,255,0.2);
+    max-width: 400px; text-align: right; line-height: 1.5;
+  }
+
+  /* ── MOBILE NAV ── */
+  .mobile-menu {
+    display: none;
+    position: fixed; top: 72px; left: 0; right: 0;
+    background: var(--ivory);
+    border-bottom: 1px solid var(--border);
+    padding: 24px 7vw;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 99;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: var(--charcoal);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    letter-spacing: 0.05em;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    #hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-right { display: none; }
+    .hero-left { padding: 5vh 7vw; }
+    #about { grid-template-columns: 1fr; gap: 48px; }
+    .doctor-grid { grid-template-columns: 1fr; gap: 48px; }
+    .doctor-card { position: static; }
+    .infra-grid { grid-template-columns: repeat(2, 1fr); }
+    .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .trust-divider { display: none; }
+  }
+  @media (max-width: 768px) {
+    section { padding: 72px 6vw; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .infra-grid { grid-template-columns: 1fr; }
+    #trust { flex-direction: row; flex-wrap: wrap; }
+    .footer-top { grid-template-columns: 1fr; }
+    .footer-disclaimer { text-align: left; }
+    .reviews-summary { flex-direction: column; align-items: flex-start; }
+    .infra-bottom { padding: 32px 24px; }
+  }
+
+  /* ── ANIMATIONS ── */
+  .reveal {
+    opacity: 0; transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* floating phone button */
+  .float-phone, .float-whatsapp {
+    position: fixed; right: 28px;
+    color: white;
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    z-index: 50;
+    transition: all 0.25s;
+  }
+  .float-phone {
+    bottom: 28px;
+    background: var(--sage-dark);
+    box-shadow: 0 4px 20px rgba(92,122,91,0.4);
+  }
+  .float-whatsapp {
+    bottom: 96px;
+    background: #25D366;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  }
+  .float-phone:hover { transform: scale(1.1); background: var(--charcoal); }
+  .float-whatsapp:hover { transform: scale(1.1); background: #1da851; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <span class="nav-logo-name">V Viva Clinic</span>
+    <span class="nav-logo-sub">Skin &amp; Hair · Jubilee Hills</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#doctor">Dr. Potluri</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="tel:09133999956" class="nav-cta">Book Appointment</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" id="ham">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#about" onclick="closeMenu()">About the Clinic</a>
+  <a href="#doctor" onclick="closeMenu()">Dr. Neelima Potluri</a>
+  <a href="#reviews" onclick="closeMenu()">Reviews</a>
+  <a href="#contact" onclick="closeMenu()">Contact & Location</a>
+  <a href="tel:09133999956" onclick="closeMenu()" style="color: var(--sage-dark); font-weight: 500;">📞 Call: 091339 99956</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span class="hero-eyebrow-text">Advanced Dermatology · Jubilee Hills, Hyderabad</span>
+    </div>
+
+    <h1 class="hero-h1">
+      Precision Care<br>for <em>Skin & Hair</em>
+    </h1>
+
+    <p class="hero-desc">
+      Clinically-led treatments combining diagnostic expertise with advanced technology. 
+      Dr. Neelima Potluri offers individualized dermatology consultations and evidence-based care.
+    </p>
+
+    <div class="hero-rating">
+      <div>
+        <span class="rating-num">4.6</span>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="rating-divider"></div>
+      <div>
+        <div class="rating-meta" style="font-weight: 500; color: var(--charcoal); font-size: 0.88rem;">66 Patient Reviews</div>
+        <div class="rating-meta">Google-verified · Jubilee Hills</div>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a href="tel:09133999956" class="btn-primary">
+        ☎ Book a Consultation
+      </a>
+      <a href="#services" class="btn-secondary">
+        View Treatments →
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-texture"></div>
+    <div class="hero-img-overlay"></div>
+    <div class="hero-visual">
+      <div class="hero-circle-bg"></div>
+    </div>
+    <div class="hero-badge-group">
+      <div class="hero-badge">
+        <span class="badge-icon">💉</span>
+        <span class="badge-title">PRP Therapy</span>
+        <span class="badge-desc">Advanced hair restoration</span>
+      </div>
+      <div class="hero-badge">
+        <span class="badge-icon">✨</span>
+        <span class="badge-title">Laser Treatments</span>
+        <span class="badge-desc">Precision skin resurfacing</span>
+      </div>
+      <div class="hero-badge">
+        <span class="badge-icon">🔬</span>
+        <span class="badge-title">Expert Diagnosis</span>
+        <span class="badge-desc">Clinician-led consultation</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div id="trust">
+  <div class="trust-item">
+    <span class="trust-number">4.6</span>
+    <span class="trust-label">Google Rating</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <span class="trust-number">66+</span>
+    <span class="trust-label">Verified Reviews</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <span class="trust-number">15+</span>
+    <span class="trust-label">Skin & Hair Services</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <span class="trust-number">1</span>
+    <span class="trust-label">Dedicated Dermatologist</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <span class="trust-number">JH</span>
+    <span class="trust-label">Jubilee Hills Location</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header">
+    <div>
+      <div class="section-tag">
+        <div class="section-tag-line"></div>
+        <span class="section-tag-text">Treatments</span>
+      </div>
+      <h2 class="section-h2">Skin &amp; Hair <em>Treatments</em></h2>
+      <p class="section-intro">Evidence-based procedures delivered with clinical precision. Each treatment is tailored to your specific skin type, condition, and goals.</p>
+    </div>
+  </div>
+
+  <div class="services-grid">
+    <!-- Hair Treatments -->
+    <div class="service-category reveal">
+      <div class="service-category-header">
+        <div class="service-category-icon">💆</div>
+        <div>
+          <div class="service-category-title">Hair Treatments</div>
+          <div class="service-category-sub">Restoration &amp; Growth Therapy</div>
+        </div>
+      </div>
+      <ul class="service-list">
+        <li class="service-item">
+          <span class="service-item-name">Hair Fall Treatment</span>
+          <span class="service-item-tag">Popular</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item-name">PRP Therapy (Platelet-Rich Plasma)</span>
+          <span class="service-item-tag">Advanced</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item-name">Mesotherapy for Hair</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item-name">Scalp Analysis &amp; Treatment</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item-name">Dandruff &amp; Scalp Psoriasis</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item-name">Alopecia Areata Management</span>
+        </li>
+      </ul>
+      <div class="service-feature">
+        <p>PRP therapy uses your own platelet-rich plasma to stimulate follicle regeneration — a clinically validated approach with no surgical intervention required.</p>
+      </div>
+    </div>
+
+    <!-- Skin Treatments -->
+    <div class="service-category reveal" style="transition-delay: 0.1s">
+      <div class="service-category-header">
+        <div class="service-category-icon">✨</div>
+        <div>
+          <div class="service-category-title">Skin Treatments</div>
+          <div class="service-category-sub">Correction &amp; Rejuvenation</div>
+        </div>
+      </div>
+      <ul class="service-list">
+        <li class="service-item">
+          <span class="service-item-name">Acne Scar Treatment</span>
+          <span class="service-item-tag">Popular</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item-name">Chemical Peels</span>
+          <span class="service-item-tag">Popular</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item-name">Laser Skin Resurfacing</span>
+          <span class="service-item-tag">Advanced</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item-name">Pigmentation &amp; Melasma</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item-name">Anti-Aging &amp; Skin Rejuvenation</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item-name">Botox &amp; Dermal Fillers</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item-name">Mole &amp; Wart Removal</span>
+        </li>
+      </ul>
+      <div class="service-feature">
+        <p>Chemical peels are customized to skin type and concern — from superficial brightening peels to medium-depth resurfacing — with downtime matched to your schedule.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT CLINIC -->
+<section id="about">
+  <div class="about-visual reveal">
+    <div class="about-main-card">
+      <div class="about-card-pattern"></div>
+      <div class="about-card-content">
+        <span class="about-card-label">Our philosophy</span>
+        <p class="about-card-quote">"Every patient deserves a treatment plan as unique as their skin."</p>
+        <p class="about-card-attr">— V Viva Skin &amp; Hair Clinic, Jubilee Hills</p>
+      </div>
+    </div>
+    <div class="about-stat-row">
+      <div class="about-stat-box">
+        <div class="about-stat-num">4.6★</div>
+        <div class="about-stat-lbl">Patient Rating</div>
+      </div>
+      <div class="about-stat-box">
+        <div class="about-stat-num">66+</div>
+        <div class="about-stat-lbl">Reviews</div>
+      </div>
+      <div class="about-stat-box">
+        <div class="about-stat-num">JH</div>
+        <div class="about-stat-lbl">Jubilee Hills</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-content reveal" style="transition-delay: 0.15s">
+    <div class="section-tag">
+      <div class="section-tag-line"></div>
+      <span class="section-tag-text">About the Clinic</span>
+    </div>
+    <h2 class="section-h2">Where Science Meets <em>Skin Care</em></h2>
+    <p class="section-intro">
+      V Viva Skin and Hair Clinic is a dedicated dermatology centre in the heart of Jubilee Hills. 
+      We combine clinical diagnostics with advanced treatment infrastructure to deliver results 
+      that are medically sound and genuinely visible.
+    </p>
+    <div class="about-points">
+      <div class="about-point">
+        <div class="about-point-dot"></div>
+        <p class="about-point-text"><strong>Not a beauty salon, not a hospital</strong> — we occupy a thoughtful middle ground: the attentive, personalized care of a specialist clinic backed by the technology of a modern facility.</p>
+      </div>
+      <div class="about-point">
+        <div class="about-point-dot"></div>
+        <p class="about-point-text"><strong>Every consultation begins with an honest assessment</strong> — Dr. Potluri evaluates your skin or scalp condition, medical history, and goals before recommending any procedure.</p>
+      </div>
+      <div class="about-point">
+        <div class="about-point-dot"></div>
+        <p class="about-point-text"><strong>Appointment-based access ensures focused attention</strong> — no rushed visits, no overcrowded waiting rooms. We respect your time and your skin.</p>
+      </div>
+      <div class="about-point">
+        <div class="about-point-dot"></div>
+        <p class="about-point-text"><strong>Located at Aditya Ram Square, Road No. 36, Jubilee Hills</strong> — a convenient, accessible address at the centre of Hyderabad's premium residential hub.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTOR -->
+<section id="doctor">
+  <div class="section-tag">
+    <div class="section-tag-line"></div>
+    <span class="section-tag-text">Your Dermatologist</span>
+  </div>
+  <h2 class="section-h2">Dr. Neelima <em>Potluri</em></h2>
+  <p class="section-intro">A qualified dermatologist with focused clinical training in skin and hair disorders, aesthetic dermatology, and minimally invasive treatments.</p>
+
+  <div class="doctor-grid">
+    <div class="doctor-card reveal">
+      <div class="doctor-card-portrait">
+        <span class="portrait-initials">NP</span>
+        <div class="portrait-label">Consultant Dermatologist · V Viva Clinic</div>
+      </div>
+      <div class="doctor-card-body">
+        <div class="doctor-name">Dr. Neelima Potluri</div>
+        <div class="doctor-title">MBBS · Dermatology Specialist · Jubilee Hills, Hyderabad</div>
+        <ul class="doctor-credentials">
+          <li class="doctor-credential">Specialist in Skin & Hair Disorders</li>
+          <li class="doctor-credential">Advanced Training in Aesthetic Dermatology</li>
+          <li class="doctor-credential">PRP & Laser Therapy Certified</li>
+          <li class="doctor-credential">Chemical Peel Specialist</li>
+          <li class="doctor-credential">Acne Scar &amp; Pigmentation Specialist</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="doctor-info reveal" style="transition-delay: 0.15s">
+      <p class="doctor-philosophy">
+        "The best skin treatment starts with listening — understanding not just what you see in the mirror, but what the skin is telling us clinically."
+      </p>
+
+      <div class="doctor-bio-section">
+        <span class="doctor-bio-label">Clinical Approach</span>
+        <p class="doctor-bio-text">
+          Dr. Neelima Potluri practices evidence-based dermatology at V Viva Skin and Hair Clinic, bringing a diagnostic-first approach to every patient interaction. She does not prescribe or recommend any treatment without a thorough assessment of skin type, lifestyle factors, and patient expectations.
+        </p>
+      </div>
+
+      <div class="doctor-bio-section">
+        <span class="doctor-bio-label">Specializations</span>
+        <p class="doctor-bio-text">
+          Dr. Potluri has particular experience in managing hair fall disorders — including androgenetic alopecia and diffuse thinning — using a combination of diagnostic trichoscopy, targeted therapies, and PRP protocols. In aesthetic dermatology, she specializes in acne scar correction, chemical resurfacing, and laser-based skin rejuvenation with a focus on achieving natural, appropriate outcomes.
+        </p>
+      </div>
+
+      <div class="doctor-bio-section">
+        <span class="doctor-bio-label">Patient Care Philosophy</span>
+        <p class="doctor-bio-text">
+          Dr. Potluri believes in frank, honest consultation — explaining what a treatment can and cannot achieve, managing expectations clearly, and never recommending procedures for their own sake. Her 4.6 Google rating across 66 reviews reflects consistent, trust-based patient relationships.
+        </p>
+      </div>
+
+      <a href="tel:09133999956" class="btn-primary" style="margin-top: 8px; display: inline-flex;">
+        Schedule a Consultation →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- INFRASTRUCTURE -->
+<section id="infra">
+  <div class="infra-header">
+    <div class="section-tag">
+      <div class="section-tag-line"></div>
+      <span class="section-tag-text">Treatment Facility</span>
+    </div>
+    <h2 class="section-h2">Advanced Treatment <em>Infrastructure</em></h2>
+    <p class="section-intro">Modern equipment paired with clinical expertise — so that every procedure is performed with precision, safety, and efficacy.</p>
+  </div>
+
+  <div class="infra-grid">
+    <div class="infra-card reveal">
+      <span class="infra-card-num">01</span>
+      <span class="infra-card-icon">💡</span>
+      <h3 class="infra-card-title">Laser Platform</h3>
+      <p class="infra-card-desc">Medical-grade laser systems for skin resurfacing, pigmentation correction, scar reduction, and targeted hair removal. Calibrated by treatment type for precise, safe delivery.</p>
+    </div>
+    <div class="infra-card reveal" style="transition-delay: 0.08s">
+      <span class="infra-card-num">02</span>
+      <span class="infra-card-icon">🔬</span>
+      <h3 class="infra-card-title">Diagnostic Instruments</h3>
+      <p class="infra-card-desc">Trichoscopy for scalp and hair follicle analysis. Skin analysis tools that guide evidence-based treatment decisions — not guesswork.</p>
+    </div>
+    <div class="infra-card reveal" style="transition-delay: 0.16s">
+      <span class="infra-card-num">03</span>
+      <span class="infra-card-icon">💉</span>
+      <h3 class="infra-card-title">PRP Processing Unit</h3>
+      <p class="infra-card-desc">Dedicated centrifuge and PRP preparation station for hair restoration and skin rejuvenation procedures, following strict sterility protocols.</p>
+    </div>
+    <div class="infra-card reveal" style="transition-delay: 0.24s">
+      <span class="infra-card-num">04</span>
+      <span class="infra-card-icon">🛋</span>
+      <h3 class="infra-card-title">Private Consultation Room</h3>
+      <p class="infra-card-desc">Dedicated consultation space designed for focused, unhurried patient interaction — full clinical history, condition assessment, and treatment planning.</p>
+    </div>
+    <div class="infra-card reveal" style="transition-delay: 0.32s">
+      <span class="infra-card-num">05</span>
+      <span class="infra-card-icon">🧴</span>
+      <h3 class="infra-card-title">Chemical Peel Suite</h3>
+      <p class="infra-card-desc">Clinical-grade peeling agents, from AHA/BHA superficial peels to TCA-based medium depth treatments, administered with dermatologist oversight.</p>
+    </div>
+    <div class="infra-card reveal" style="transition-delay: 0.40s">
+      <span class="infra-card-num">06</span>
+      <span class="infra-card-icon">🛡</span>
+      <h3 class="infra-card-title">Safety & Sterilization</h3>
+      <p class="infra-card-desc">All procedures follow strict clinical hygiene standards. Single-use instruments where required. Allergy and patch testing available prior to chemical treatments.</p>
+    </div>
+  </div>
+
+  <div class="infra-bottom">
+    <p class="infra-bottom-text">
+      <em>All treatments at V Viva are performed under direct dermatologist supervision</em> — no technician-led procedures.
+    </p>
+    <a href="tel:09133999956" class="btn-gold">Enquire About a Treatment →</a>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="reviews-header">
+    <div class="section-tag">
+      <div class="section-tag-line"></div>
+      <span class="section-tag-text">Patient Reviews</span>
+    </div>
+    <h2 class="section-h2">What Patients <em>Say</em></h2>
+  </div>
+
+  <div class="reviews-summary">
+    <div class="reviews-score">
+      <span class="reviews-score-num">4.6</span>
+      <span class="reviews-score-stars">★★★★★</span>
+      <span class="reviews-score-label">66 Reviews · Google</span>
+    </div>
+    <div class="reviews-breakdown">
+      <div class="breakdown-item">
+        <span class="breakdown-label">5★</span>
+        <div class="breakdown-bar"><div class="breakdown-fill" style="width: 72%"></div></div>
+        <span class="breakdown-count">47</span>
+      </div>
+      <div class="breakdown-item">
+        <span class="breakdown-label">4★</span>
+        <div class="breakdown-bar"><div class="breakdown-fill" style="width: 18%"></div></div>
+        <span class="breakdown-count">12</span>
+      </div>
+      <div class="breakdown-item">
+        <span class="breakdown-label">3★</span>
+        <div class="breakdown-bar"><div class="breakdown-fill" style="width: 7%"></div></div>
+        <span class="breakdown-count">5</span>
+      </div>
+      <div class="breakdown-item">
+        <span class="breakdown-label">2★</span>
+        <div class="breakdown-bar"><div class="breakdown-fill" style="width: 2%"></div></div>
+        <span class="breakdown-count">2</span>
+      </div>
+      <div class="breakdown-item">
+        <span class="breakdown-label">1★</span>
+        <div class="breakdown-bar"><div class="breakdown-fill" style="width: 0%"></div></div>
+        <span class="breakdown-count">0</span>
+      </div>
+      <p style="font-size:0.78rem; color: var(--text-muted); margin-top: 12px;">Verified Google reviews. Average updated periodically.</p>
+    </div>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Dr. Potluri was thorough and honest about my hair fall condition. She explained every step of the PRP treatment clearly and I've seen noticeable improvement over three sessions."</p>
+      <div class="review-author">
+        <div class="review-avatar">RK</div>
+        <div>
+          <div class="review-name">Rohith K.</div>
+          <div class="review-date">Google Review · Hair Fall Treatment</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay: 0.08s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I came in for acne scar treatment with very guarded expectations. The doctor assessed my skin carefully and suggested a combination approach. The improvement has been genuinely significant."</p>
+      <div class="review-author">
+        <div class="review-avatar">PS</div>
+        <div>
+          <div class="review-name">Priya S.</div>
+          <div class="review-date">Google Review · Acne Scar Treatment</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay: 0.16s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Clean clinic, professional staff, and a doctor who doesn't rush you. The chemical peel was explained thoroughly before the procedure. Results were exactly as described — no exaggeration."</p>
+      <div class="review-author">
+        <div class="review-avatar">AM</div>
+        <div>
+          <div class="review-name">Ananya M.</div>
+          <div class="review-date">Google Review · Chemical Peel</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay: 0.24s">
+      <div class="review-stars">★★★★☆</div>
+      <p class="review-text">"Good experience overall. Dr. Neelima was patient and gave me a realistic picture of what to expect with my pigmentation. Appreciated the honesty — many clinics oversell these things."</p>
+      <div class="review-author">
+        <div class="review-avatar">VR</div>
+        <div>
+          <div class="review-name">Vinay R.</div>
+          <div class="review-date">Google Review · Pigmentation Treatment</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay: 0.32s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"The clinic feels genuinely medical — not a spa trying to look clinical. That's what I wanted. My scalp analysis was thorough and the treatment plan made sense. Coming back for follow-up."</p>
+      <div class="review-author">
+        <div class="review-avatar">SK</div>
+        <div>
+          <div class="review-name">Sunita K.</div>
+          <div class="review-date">Google Review · Scalp Treatment</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay: 0.40s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Best dermatologist experience I've had in Hyderabad. Jubilee Hills location is very convenient. Appointment-based — no long waiting. Dr. Potluri is calm and thorough."</p>
+      <div class="review-author">
+        <div class="review-avatar">ND</div>
+        <div>
+          <div class="review-name">Nishant D.</div>
+          <div class="review-date">Google Review · General Consultation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT CTA -->
+<section id="appointment">
+  <div class="appt-bg-pattern"></div>
+  <div class="appt-content">
+    <div class="appt-eyebrow">
+      <div class="appt-eyebrow-line"></div>
+      <span class="appt-eyebrow-text">Appointments Available</span>
+      <div class="appt-eyebrow-line"></div>
+    </div>
+    <h2 class="appt-h2">
+      Begin with a <em>Clinical Consultation</em>
+    </h2>
+    <p class="appt-desc">
+      Your skin and hair deserve a clinician's honest assessment — not a generic protocol. 
+      Book an appointment with Dr. Neelima Potluri at V Viva Clinic, Jubilee Hills.
+    </p>
+    <div class="appt-actions">
+      <a href="tel:09133999956" class="btn-gold">
+        ☎ Call to Book: 091339 99956
+      </a>
+      <a href="#contact" class="btn-outline-white">
+        View Location
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-tag">
+    <div class="section-tag-line"></div>
+    <span class="section-tag-text">Find Us</span>
+  </div>
+  <h2 class="section-h2">Contact &amp; <em>Location</em></h2>
+  <p class="section-intro">V Viva Skin and Hair Clinic is located at Aditya Ram Square, Jubilee Hills — one of Hyderabad's most accessible premium addresses.</p>
+
+  <div class="contact-grid">
+    <div>
+      <div class="contact-details reveal">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-item-content">
+            <span class="contact-item-label">Address</span>
+            <div class="contact-item-value">
+              646A, 1st Floor, Aditya Ram Square<br>
+              Road No. 36, Jubilee Hills<br>
+              Hyderabad, Telangana 500033
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-item-content">
+            <span class="contact-item-label">Phone</span>
+            <div class="contact-item-value">
+              <a href="tel:09133999956">091339 99956</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">⭐</div>
+          <div class="contact-item-content">
+            <span class="contact-item-label">Rating</span>
+            <div class="contact-item-value">
+              4.6 / 5 · 66 Verified Google Reviews
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📅</div>
+          <div class="contact-item-content">
+            <span class="contact-item-label">Appointments</span>
+            <div class="contact-item-value">
+              By appointment recommended<br>
+              <a href="tel:09133999956" style="color: var(--sage-dark); font-size: 0.85rem;">Call to schedule →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-hours reveal" style="margin-top: 32px; transition-delay: 0.1s">
+        <div class="hours-title">Clinic Hours</div>
+        <table style="width: 100%; font-size: 0.85rem; border-collapse: collapse;">
+          <tr style="border-bottom: 1px solid var(--border)">
+            <td style="padding: 8px 0; color: var(--charcoal)">Monday – Friday</td>
+            <td style="padding: 8px 0; color: var(--text-muted); text-align: right">10:00 AM – 7:00 PM</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border)">
+            <td style="padding: 8px 0; color: var(--charcoal)">Saturday</td>
+            <td style="padding: 8px 0; color: var(--text-muted); text-align: right">10:00 AM – 5:00 PM</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 0; color: var(--charcoal)">Sunday</td>
+            <td style="padding: 8px 0; color: var(--text-muted); text-align: right">By Appointment</td>
+          </tr>
+        </table>
+        <p class="hours-note">⚠ Hours may vary. Call ahead to confirm availability or book a specific appointment slot: <strong><a href="tel:09133999956" style="color: var(--charcoal); text-decoration: none;">091339 99956</a></strong></p>
+      </div>
+    </div>
+
+    <div class="reveal" style="transition-delay: 0.1s; border-radius: 6px; overflow: hidden; min-height: 380px;">
+      <iframe
+        src="https://www.google.com/maps?q=Aditya+Ram+Square+Road+36+Jubilee+Hills+Hyderabad&output=embed"
+        width="100%"
+        height="420"
+        style="border:0; border-radius: 6px; display: block;"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <div style="margin-top: 12px; text-align: center;">
+        <a href="https://maps.google.com/?q=Aditya+Ram+Square+Road+36+Jubilee+Hills+Hyderabad" target="_blank" class="btn-primary" style="font-size: 0.78rem; padding: 12px 22px; display: inline-flex; text-decoration: none;">
+          Open in Google Maps →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">V Viva Skin &amp; Hair Clinic</div>
+      <span class="footer-brand-tagline">Dr. Neelima Potluri · Advanced Dermatology · Jubilee Hills</span>
+      <p class="footer-brand-desc">A dedicated dermatology clinic offering evidence-based skin and hair treatments. Personalized care by a qualified dermatologist in the heart of Jubilee Hills, Hyderabad.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="#services">Hair Fall Treatment</a></li>
+        <li><a href="#services">PRP Therapy</a></li>
+        <li><a href="#services">Chemical Peels</a></li>
+        <li><a href="#services">Acne Scar Treatment</a></li>
+        <li><a href="#services">Laser Treatments</a></li>
+        <li><a href="#services">Skin Rejuvenation</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Clinic</div>
+      <ul class="footer-links">
+        <li><a href="#about">About the Clinic</a></li>
+        <li><a href="#doctor">Dr. Neelima Potluri</a></li>
+        <li><a href="#infra">Treatment Facility</a></li>
+        <li><a href="#reviews">Patient Reviews</a></li>
+        <li><a href="#contact">Location &amp; Hours</a></li>
+        <li><a href="tel:09133999956">📞 091339 99956</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2024 V Viva Skin &amp; Hair Clinic · Jubilee Hills, Hyderabad</p>
+    <p class="footer-disclaimer">Medical information on this website is for general informational purposes only and does not constitute professional medical advice. Consult a qualified dermatologist for diagnosis and treatment.</p>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="tel:09133999956" class="float-phone" title="Call to book appointment">📞</a>
+<a href="https://wa.me/919133999956" target="_blank" class="float-whatsapp" title="WhatsApp us">💬</a>
+
+<script>
+  // Navbar scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  // Mobile menu
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(r => observer.observe(r));
+
+  // Smooth anchor scroll with offset
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        window.scrollTo({ top: target.offsetTop - 72, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
